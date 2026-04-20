@@ -1,0 +1,28 @@
+{
+  "include": ["src", "env.d.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "lib": ["ESNext", "DOM", "DOM.Iterable", "WebWorker"],
+    "types": ["vite/client"],
+
+    // Bundler
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    // Linting
+    "strict": true,
+    "skipLibCheck": true,
+
+    // Alias
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}

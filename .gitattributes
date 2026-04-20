@@ -1,0 +1,2 @@
+# 自动将行尾转换为 LF
+* text=auto eol=lf

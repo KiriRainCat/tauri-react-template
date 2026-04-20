@@ -1,0 +1,7 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "printWidth": 140,
+  "sortTailwindcss": true,
+  "htmlWhitespaceSensitivity": "ignore",
+  "ignorePatterns": ["*.gen.ts", "src/components/ui"]
+}

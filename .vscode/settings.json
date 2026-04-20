@@ -1,0 +1,25 @@
+{
+  // 按需开启项目级错误报告
+  // "js/ts.tsserver.experimental.enableProjectDiagnostics": true,
+
+  // 文件折叠
+  "explorer.fileNesting.patterns": {
+    ".oxlintrc.json": "components.json"
+  },
+
+  // 隐藏文件
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/vite-env.d.ts": true,
+    "**/routeTree.gen.ts": true,
+
+    "src-tauri/gen": true,
+    "src-tauri/icons": true,
+    "src-tauri/build.rs": true,
+    "src-tauri/src/main.rs": true
+  },
+
+  "files.readonlyInclude": { "**/routeTree.gen.ts": true },
+  "files.watcherExclude": { "**/routeTree.gen.ts": true },
+  "editor.defaultFormatter": "oxc.oxc-vscode"
+}

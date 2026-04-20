@@ -24,7 +24,7 @@ export default defineConfig({
     viteReact(),
     visualizer(),
     tailwindcss(),
-    tanstackRouter(),
+    tanstackRouter({ routeFileIgnorePattern: "^(components|hooks|services|stores|utils)$" }),
     babel({ presets: [reactCompilerPreset()] }),
   ],
   resolve: {
